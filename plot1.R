@@ -22,3 +22,6 @@ png(filename = "plot1.png",
     width = 480, height = 480, units = "px", pointsize = 12,
     bg = "white",  res = NA,
     type = c("cairo", "cairo-png", "Xlib", "quartz"), antialias)
+
+dev.copy(png,file="plot1.png")
+dev.off()
